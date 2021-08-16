@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <script defer src="src/index.js"></script>
+  </head>
+  <body>
+    <aside class="vet-sidebar md-shadow">
+      <h1>Vet Directory</h1>
+      <form id="create-vet-form">
+        <h2>Create a Vet</h2>
+        <label for="first-name">First Name</label>
+        <input type="text" name="first-name" id="first-name" />
+        <label for="last-name">Last Name</label>
+        <input type="text" name="last-name" id="last-name" />
+        <button type="submit">Create</button>
+      </form>
+      <section>
+        <h2>List of Vets</h2>
+        <ul class="vet-list">
+          <!--
+            <li>
+              <h3>John Smith</h3>
+              <button>View</button>
+            </li>
+          -->
+
+          <!-- Display all vets here -->
+        </ul>
+      </section>
+    </aside>
+    <main>
+      <form id="create-animal-form">
+        <h2>Create a Animal</h2>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" />
+        <label for="type">Type</label>
+        <select name="type" id="type">
+          <option value="">Please select a type...</option>
+          <option value="cat">Cat</option>
+          <option value="dog">Dog</option>
+          <option value="horse">Horse</option>
+          <option value="snake">Snake</option>
+        </select>
+        <div>
+          <p class="bold">Does the animal have a microchip?</p>
+          <input
+            type="radio"
+            id="microchip-yes"
+            name="microchip"
+            value="microchip-yes"
+          />
+          <label for="microchip-yes">Yes</label>
+          <input
+            type="radio"
+            id="microchip-no"
+            name="microchip"
+            value="microchip-no"
+            checked
+          />
+          <label for="microchip-no">No</label>
+        </div>
+        <button id="create-animals" type="submit" disabled>Create</button>
+      </form>
+      <section>
+        <h2>List of Animals</h2>
+        <ul class="animal-list">
+          <!-- Display animals for the selected vet here -->
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

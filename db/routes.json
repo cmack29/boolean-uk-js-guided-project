@@ -1,0 +1,5 @@
+{
+  "/vets": "/vets?_embed=animals",
+  "/vets/*": "/vets/$1?_embed=animals",
+  "/animals/*": "/animals/$1"
+}

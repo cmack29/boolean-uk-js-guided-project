@@ -1,0 +1,49 @@
+{
+  "vets": [
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Smith"
+    },
+    {
+      "firstName": "Conor",
+      "lastName": "McCormack",
+      "id": 2
+    },
+    {
+      "firstName": "John",
+      "lastName": "Cena",
+      "id": 3
+    }
+  ],
+  "animals": [
+    {
+      "id": 1,
+      "name": "Millie",
+      "type": "cat",
+      "vetId": 1,
+      "microchip": true
+    },
+    {
+      "id": 2,
+      "name": "Bruno",
+      "type": "horse",
+      "vetId": 1,
+      "microchip": false
+    },
+    {
+      "name": "Conor",
+      "type": "dog",
+      "microchip": false,
+      "vetId": 1,
+      "id": 3
+    },
+    {
+      "name": "Garfield",
+      "type": "cat",
+      "microchip": false,
+      "vetId": 2,
+      "id": 4
+    }
+  ]
+}

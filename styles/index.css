@@ -1,0 +1,84 @@
+body {
+  font-family: 'Source Code Pro', monospace;
+
+  display: grid;
+  grid-template-columns: 200px 1fr;
+
+  gap: 64px;
+}
+
+h1 {
+  text-decoration: underline;
+}
+
+h1,
+h2 {
+  margin-bottom: 16px;
+}
+
+p {
+  margin-bottom: 8px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+label {
+  font-weight: bold;
+}
+
+label + input:not([type="radio"]),
+input:not([type="radio"]),
+select {
+  display: block;
+
+  margin-bottom: 8px;
+}
+
+.md-shadow {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.vet-sidebar {
+  padding: 8px;
+  width: 250px;
+
+  background-color: #eee;
+}
+
+#create-vet-form,
+#create-animal-form {
+  padding: 8px 0;
+
+  margin-bottom: 16px;
+
+  border-bottom: 2px solid black;
+}
+
+.vet-list li {
+  padding: 16px 0;
+
+  display: grid;
+  grid-template-columns: 1fr auto;
+
+  border-top: 1px solid black;
+}
+
+.vet-list {
+  border-bottom: 1px solid black;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+color: white;
+}
+
+button:disabled {
+  background: rgb(206, 206, 206);
+}
